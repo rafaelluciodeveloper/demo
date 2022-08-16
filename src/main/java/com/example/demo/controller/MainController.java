@@ -1,12 +1,12 @@
 package com.example.demo.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class MainController {
     @GetMapping("/")
-    String hello() {
+    public String hello() {
         return "This tutorial is the best. All hail the great Kristijan.";
     }
 }
